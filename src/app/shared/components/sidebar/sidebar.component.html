@@ -5,8 +5,8 @@
     <div class=" list-group list-reset">
 
         @for (tag of tags; track $index) {
-        <button class="list-group-item list-group-item-action">
-            {{tag}}
+        <button (click)="buscarGif(tag)" class="list-group-item list-group-item-action">
+            {{ tag }}
         </button>
         }
 
